@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/dashboard.css">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- font-awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<title>Dashboard</title>
+</head>
+<body>
+		<div class="wrapper">
+			<aside class="left-bar" id="sidebar">
+				<a href="dashboard.html" class="d-flex flex-column align-items-center mt-4 mb-3">
+                    <div class="app-brand-logo demo">
+                        <img src="assets/images/img2.png" alt="Logo" class="img-fluid" width="70">
+                    </div>
+                    <div class="brand-text text-light demo menu-text fw-bolder ms-2 d-flex flex-column align-items-center">
+                    	<div class="h6 fw-semibold" >E-Industrial</div> 
+                    	<div class=" h6 fw-semibold">Mapping</div>
+                    </div>
+                </a>
+				<ul class="sidebar-nav">
+					<li class="sidebar-item">
+						<a href="dashboard.html" class="sidebar-link active d-flex flex-column align-items-center justify-content-center" data-bs-toggle="collapse" data-bs-target="#dashboard" aria-exxpanded="false" aria-controls="dashboard">
+							<i class='bx bxs-dashboard'></i>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a href="industry.html" class="sidebar-link d-flex flex-column align-items-center justify-content-center">
+							<i class="fa-solid fa-list"></i>
+							<span>Industries</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a href="#" class="sidebar-link d-flex flex-column align-items-center justify-content-center">
+							<i class="fa-solid fa-wallet"></i>
+							<span>GIS</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a href="#" class="sidebar-link d-flex flex-column align-items-center justify-content-center">
+							<i class="fa-regular fa-file-lines"></i>
+							<span>Reports</span>						
+						</a>
+					</li>
+
+					<div class="mt-5"></div>
+					<hr>
+					<li class="sidebar-item">
+						<a href="#" class="sidebar-link d-flex flex-column align-items-center justify-content-centers">
+							<i class="fa-solid fa-gear"></i>
+							<span>Settings</span>
+						</a>
+					</li>	
+				</ul>
+			</aside>
+
+			<!-- ======Main Content====== -->
+			<div id="overlay" class="overlay"></div>
+			<div class="main-content">
+				<header>
+					<nav class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+						<button class="btn  d-md-none d-flex mx-2" id="toggleSidebar"><span class="navbar-toggler-icon"></span></button>
+
+			            <h4 class="text-wrap ms-0 mx-auto">Dashboard</h4>
+						<ul class="navbar-nav">
+						  <!-- Avatar -->
+						    <li class="nav-item dropdown">
+						    <a
+						      class="nav-link dropdown-toggle d-flex align-items-center"
+						      href="#"
+						      id="navbarDropdownMenuLink"
+						      role="button"
+						      data-bs-toggle="dropdown"
+						      aria-expanded="false"
+						    >
+						    <img
+						        src="assets/images/img5.png"
+						        class="rounded-circle"
+						        height="22"
+						        alt="Portrait of a Woman"
+						        loading="lazy"/>
+						    </a>
+						    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+						        <li>
+
+							        <a class="dropdown-item" href="#">My profile</a>
+						        </li>
+						        <li>
+							        <a class="dropdown-item" href="#">Settings</a>
+							    </li>
+						        <li>
+							        <a class="dropdown-item" href="#">Logout</a>
+						        </li>
+						    </ul>
+						    </li>
+						</ul>
+						</div>
+					</nav>
+				</header>
+
+				<div class="content">
+					<div class="container-fluid">
+						<nav class="mt-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item"><a href="#" style="color:black">Dashboard</a></li>
+						    <li class="breadcrumb-item active" aria-current="page">Home</li>
+						  </ol>
+						</nav>
+						<div class="row g-2">
+							<div class="col-lg-8 col-sm-12 mt-2">
+								<div class="row g-3">
+									<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+									  	<div class="card bg-red h-100">
+									  	    <div class="card-content">
+									  	        <div class="card-body">
+										  	        <div class="media d-flex">
+										  	            <div class="media-body text-left">
+										  	            	<h6>Total Industries</h6>
+											  	            <h3 class="danger">6,578</h3>
+											  	            <span style="font-size:10px">View more<i class="fa-solid fa-arrow-right arrow"></i></span>
+										  	            </div>
+										  	            <div class="icons align-self-center">
+											  	            <img src="assets/images/img6.png">
+										  	            </div>
+										  	        </div>
+									  	       </div>
+									  	    </div>
+								  	    </div>
+								    </div>
+								    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+						    		  	<div class="card bg-orange h-100">
+						    		  	    <div class="card-content">
+						    		  	        <div class="card-body">
+						    			  	        <div class="media d-flex">
+						    			  	            <div class="media-body text-left">
+										  	            	<h6>Complete</h6>
+						    				  	            <h3 class="danger">12</h3>
+						    				  	            <span style="font-size:10px">View more<i class="fa-solid fa-arrow-right arrow"></i></span>
+						    			  	            </div>
+						    			  	            <div class="icons align-self-center">
+						    				  	            <img src="assets/images/img7.png">
+						    			  	            </div>
+						    			  	        </div>
+						    		  	       </div>
+						    		  	    </div>
+						    	  	    </div>
+									</div>
+								    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+						    		  	<div class="card bg-green h-100">
+						    		  	    <div class="card-content">
+						    		  	        <div class="card-body">
+						    			  	        <div class="media d-flex">
+						    			  	            <div class="media-body text-left">
+										  	            	<h6>InComplete</h6>
+						    				  	            <h3 class="danger">5467</h3>
+						    				  	            <span style="font-size:10px">View more<i class="fa-solid fa-arrow-right arrow"></i></span>
+						    			  	            </div>
+						    			  	            <div class="icons align-self-center">
+						    				  	            <img src="assets/images/img8.png">
+						    			  	            </div>
+						    			  	        </div>
+						    		  	       </div>
+						    		  	    </div>
+						    	  	    </div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+									  	<div class="card bg-cyan h-100">
+									  	    <div class="card-content">
+									  	        <div class="card-body">
+										  	        <div class="media d-flex">
+										  	            <div class="media-body text-left">
+										  	            	<div class="h6 text-wrap ">Air Polluted</div>
+										  	            	<!-- <h6>Air Polluted</h6> -->
+											  	            <h3 class="danger">234</h3>
+											  	            <span style="font-size:10px">View more<i class="fa-solid fa-arrow-right arrow"></i></span>
+										  	            </div>
+										  	            <div class="icons align-self-center">
+											  	            <img src="assets/images/img9.png">
+										  	            </div>
+										  	        </div>
+									  	       </div>
+									  	    </div>
+								  	    </div>
+								    </div>
+								    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+						    		  	<div class="card bg-blue h-100">
+						    		  	    <div class="card-content">
+						    		  	        <div class="card-body">
+						    			  	        <div class="media d-flex">
+						    			  	            <div class="media-body text-left">
+										  	            	<h6>Water Polluted</h6>
+						    				  	            <h3 class="danger">458</h3>
+						    				  	            <span style="font-size:10px">View more<i class="fa-solid fa-arrow-right arrow"></i></span>
+						    			  	            </div>
+						    			  	            <div class="icons align-self-center">
+						    				  	            <img src="assets/images/img10.png">
+						    			  	            </div>
+						    			  	        </div>
+						    		  	       </div>
+						    		  	    </div>
+						    	  	    </div>
+								    </div>
+								    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+						    		  	<div class="card bg-purple h-100">
+						    		  	    <div class="card-content">
+						    		  	        <div class="card-body">
+						    			  	        <div class="media d-flex">
+						    			  	            <div class="media-body text-left">
+										  	            	<h6>Noise Pollution</h6>
+						    				  	            <h3 class="danger">62</h3>
+						    				  	            <span style="font-size:10px">View more<i class="fa-solid fa-arrow-right arrow"></i></span>
+						    			  	            </div>
+						    			  	            <div class="icons align-self-center">
+						    				  	            <img src="assets/images/img11.png">
+						    			  	            </div>
+						    			  	        </div>
+						    		  	       </div>
+						    		  	    </div>
+						    	  	    </div>
+								    </div>
+								    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+							  		  	<div class="card bg-pink h-100">
+							  		  	    <div class="card-content">
+							  		  	        <div class="card-body">
+							  			  	        <div class="media d-flex">
+							  			  	            <div class="media-body text-left">
+										  	            	<h6>Odor</h6>
+							  				  	            <h3 class="danger">852</h3>
+							  				  	            <span style="font-size:10px">View more<i class="fa-solid fa-arrow-right arrow"></i></span>
+							  			  	            </div>
+							  			  	            <div class="icons align-self-center">
+							  				  	            <img src="assets/images/img12.png">
+							  			  	            </div>
+							  			  	        </div>
+							  		  	       </div>
+							  		  	    </div>
+							  	  	    </div>
+								    </div>
+								    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+							    	  	<div class="card bg-cherry h-100">
+							    	  	    <div class="card-content">
+							    	  	        <div class="card-body">
+							    		  	        <div class="media d-flex">
+							    		  	            <div class="media-body text-left">
+										  	            	<h6>Vibration</h6>
+							    			  	            <h3 class="danger">15</h3>
+							    			  	            <span style="font-size:10px">View more<i class="fa-solid fa-arrow-right arrow"></i></span>
+							    		  	            </div>
+							    		  	            <div class="icons align-self-center">
+							    			  	            <img src="assets/images/img13.png">
+							    		  	            </div>
+							    		  	        </div>
+							    	  	       </div>
+							    	  	    </div>
+							      	    </div>
+								   </div>
+								   <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+								   	  	<div class="card bg-cone h-100">
+								   	  	    <div class="card-content">
+								   	  	        <div class="card-body">
+								   		  	        <div class="media d-flex">
+								   		  	            <div class="media-body text-left">
+										  	            	<h6>Solid Waste</h6>
+								   			  	            <h3 class="danger">486</h3>
+								   			  	            <span style="font-size:10px">View more<i class="fa-solid fa-arrow-right arrow"></i></span>
+								   		  	            </div>
+								   		  	            <div class="icons align-self-center">
+								   			  	            <img src="assets/images/img14.png">
+								   		  	            </div>
+								   		  	        </div>
+								   	  	       </div>
+								   	  	    </div>
+							     	    </div>
+								   </div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-12 mt-2">
+								<div class="card map-container h-100">
+				                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13606.239616418521!2d74.35851715!3d31.508778600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919044d53e79667%3A0x294589c83c40610a!2sIndustrial%20Area%20Industrial%20Plots%2C%20Lahore%2C%20Punjab!5e0!3m2!1sen!2s!4v1719815732948!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				                </div>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid mt-3">
+						<div class="row g-2`">
+							<div class="col-md-6 col-sm-12 mt-2">
+								<div class="card border-0 h-100">
+									<div id="container"></div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-12 mt-2">
+								<div class="card border-0 h-100">
+									<div id="container1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid mt-3">
+						<div class="card border-0 h-100">
+							<div id="container2"></div>
+						</div>
+					</div>
+					<div class="container-fluid mt-3 mb-4">
+						<div class="card border-0 h-100">
+							<div id="container3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+		<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+		<script src="https://code.highcharts.com/modules/data.js"></script>
+
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+
+	    <script src="assets/js/bootstrap.bundle.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/dashboard.css">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- font-awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<title>Industry</title>
+</head>
+<body>
+		<div class="wrapper">
+			<aside class="left-bar" id="sidebar">
+				<a href="dashboard.html" class="d-flex flex-column align-items-center mt-4 mb-3">
+                    <div class="app-brand-logo demo">
+                        <img src="assets/images/img2.png" alt="Logo" class="img-fluid" width="80">
+                    </div>
+                    <div class="brand-text text-light demo menu-text fw-bolder ms-2 d-flex flex-column align-items-center">
+                    	<div class="h6 fw-semibold" >E-Industrial</div> 
+                    	<div class=" h6 fw-semibold">Mapping</div>
+                    </div>
+                </a>
+				<ul class="sidebar-nav">
+					<li class="sidebar-item">
+						<a href="dashboard.html" class="sidebar-link d-flex flex-column align-items-center justify-content-center" data-bs-toggle="collapse" data-bs-target="#dashboard" aria-exxpanded="false" aria-controls="dashboard">
+							<i class='bx bxs-dashboard'></i>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a href="industry.html" class="sidebar-link active d-flex flex-column align-items-center justify-content-center">
+							<i class="fa-solid fa-list"></i>
+							<span>Industries</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a href="#" class="sidebar-link d-flex flex-column align-items-center justify-content-center">
+							<i class="fa-solid fa-wallet"></i>
+							<span>GIS</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a href="#" class="sidebar-link d-flex flex-column align-items-center justify-content-center">
+							<i class="fa-regular fa-file-lines"></i>
+							<span>Reports</span>						
+						</a>
+					</li>
+
+					<div class="mt-5"></div>
+					<hr>
+					<li class="sidebar-item">
+						<a href="#" class="sidebar-link d-flex flex-column align-items-center justify-content-centers">
+							<i class="fa-solid fa-gear"></i>
+							<span>Settings</span>
+						</a>
+					</li>	
+				</ul>
+			</aside>
+
+			<!-- ======Main Content====== -->
+			<div id="overlay" class="overlay"></div>
+			<div class="main-content bg-white">
+					<nav class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+						<!-- <button id="header-toggle" class="btn d-none d-md-block" type="button">
+							<span class="navbar-toggler-icon"></span>
+						</button> -->
+						<button class="btn  d-md-none d-flex mx-2" id="toggleSidebar"><span class="navbar-toggler-icon"></span></button>
+
+			            <h4 class="text-wrap ms-0 mx-auto">Industries</h4>
+			            <button type="button" class="btn custom-button">+ Add Industry</button>			     
+						</div>
+					</nav>
+				<div class="content">
+					<div class="container-fluid mt-5">
+						<div class="table-responsive">
+							<table class="table table-striped align-middle mb-0 bg-white tablecontent">
+							  <thead class="bg-light">
+							    <tr>
+							      <th>Sr#</th>
+							      <th>Name</th>
+							      <th>Contact</th>
+							      <th>Industry</th>
+							      <th>Location</th>
+							      <th>Status</th>
+							      <th>Actions</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <td>#06F5977</td>
+							      <td>Muhammad Ali</td>
+							      <td>+92456776543</td>
+							      <td>Fuel Industry</td>
+							      <td>Park View Society, Lahore</td>
+							      <td>
+							        <span class="badge bg-rosepink d-inline">Incomplete</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#9786564</td>
+							      <td>Ameer Hamza</td>
+							      <td>+92456776543</td>
+							      <td>Parkview Industry</td>
+							      <td>Link Road, Ali Tower, Lahore</td>
+							      <td>
+							        <span class="badge bg-lightgreen d-inline">Completed</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#06F5977</td>
+							      <td>Muhammad Ali</td>
+							      <td>+92456776543</td>
+							      <td>Fuel Industry</td>
+							      <td>Park View Society, Lahore</td>
+							      <td>
+							        <span class="badge bg-rosepink d-inline">Incomplete</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#9786564</td>
+							      <td>Ameer Hamza</td>
+							      <td>+92456776543</td>
+							      <td>Parkview Industry</td>
+							      <td>Link Road, Ali Tower, Lahore</td>
+							      <td>
+							      	<span class="badge bg-lightgreen d-inline">Completed</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#06F5977</td>
+							      <td>Muhammad Ali</td>
+							      <td>+92456776543</td>
+							      <td>Fuel Industry</td>
+							      <td>Park View Society, Lahore</td>
+							      <td>
+							        <span class="badge bg-rosepink d-inline">Incomplete</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#9786564</td>
+							      <td>Ameer Hamza</td>
+							      <td>+92456776543</td>
+							      <td>Parkview Industry</td>
+							      <td>Link Road, Ali Tower, Lahore</td>
+							      <td>
+							        <span class="badge bg-lightgreen d-inline">Completed</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#06F5977</td>
+							      <td>Muhammad Ali</td>
+							      <td>+92456776543</td>
+							      <td>Fuel Industry</td>
+							      <td>Park View Society, Lahore</td>
+							      <td>
+							        <span class="badge bg-rosepink d-inline">Incomplete</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#9786564</td>
+							      <td>Ameer Hamza</td>
+							      <td>+92456776543</td>
+							      <td>Parkview Industry</td>
+							      <td>Link Road, Ali Tower, Lahore</td>
+							      <td>
+							        <span class="badge bg-lightgreen d-inline">Completed</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#06F5977</td>
+							      <td>Muhammad Ali</td>
+							      <td>+92456776543</td>
+							      <td>Fuel Industry</td>
+							      <td>Park View Society, Lahore</td>
+							      <td>
+							        <span class="badge bg-rosepink d-inline">Incomplete</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#9786564</td>
+							      <td>Ameer Hamza</td>
+							      <td>+92456776543</td>
+							      <td>Parkview Industry</td>
+							      <td>Link Road, Ali Tower, Lahore</td>
+							      <td>
+							        <span class="badge bg-lightgreen d-inline">Completed</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#06F5977</td>
+							      <td>Muhammad Ali</td>
+							      <td>+92456776543</td>
+							      <td>Fuel Industry</td>
+							      <td>Park View Society, Lahore</td>
+							      <td>
+							        <span class="badge bg-rosepink d-inline">Incomplete</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>#9786564</td>
+							      <td>Ameer Hamza</td>
+							      <td>+92456776543</td>
+							      <td>Parkview Industry</td>
+							      <td>Link Road, Ali Tower, Lahore</td>
+							      <td>
+							        <span class="badge bg-lightgreen d-inline button-">Completed</span>
+							      </td>
+							      <td>
+							        <button type="button" class="btn btn-success">
+							            <i class="fas fa-eye"></i>
+							        </button>
+							      </td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<script src="assets/js/main.js"></script>
+</body>
+</html>
